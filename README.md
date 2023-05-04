@@ -90,4 +90,4 @@ token: ASSIGNMENT
 lineno:6
 --------------------
 ```
-
+Where `yytext` is the matched token, `token class` is the token classification, and `lineno` is the line number where the token was found.
