@@ -41,7 +41,7 @@
 %%
 
 void ret_print(char *token_type) {
-    printf("--------------------\nyytext: %s\ntoken: %s\nlineno:%d\n", yytext, token_type, lineno);
+    printf("--------------------\nyytext: %s\ntoken class: %s\nlineno:%d\n", yytext, token_type, lineno);
 }
 
 void yyerror(char *message){
