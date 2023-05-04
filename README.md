@@ -70,24 +70,56 @@ The program is expected to output the following to the terminal:
 ```
 --------------------
 yytext: // This is a comment - you may edit this out if you did not handle comments
-token: COMMENT
+token class: COMMENT
 lineno:1
 --------------------
-yytext: // This test file handles most (not all) of the reserved words in EASY
-token: COMMENT
+yytext: // hanoi.easy
+token class: COMMENT
 lineno:2
 --------------------
-yytext: // reserved_test.easy
-token: COMMENT
-lineno:3
+yytext: procedure
+token class: RESERVED_CONTROL_OPERATOR
+lineno:4
 --------------------
-yytext: middle
-token: IDENTIFIER
-lineno:6
+yytext: THP
+token class: IDENTIFIER
+lineno:4
 --------------------
-yytext: =
-token: ASSIGNMENT
-lineno:6
+yytext: (
+token class: GROUPING
+lineno:4
+--------------------
+yytext: n
+token class: IDENTIFIER
+lineno:4
+--------------------
+yytext: ,
+token class: DELIMITER
+lineno:4
+--------------------
+yytext: S
+token class: IDENTIFIER
+lineno:4
+--------------------
+yytext: ,
+token class: DELIMITER
+lineno:4
+--------------------
+yytext: T
+token class: IDENTIFIER
+lineno:4
+--------------------
+yytext: ,
+token class: DELIMITER
+lineno:4
+--------------------
+yytext: I
+token class: IDENTIFIER
+lineno:4
+--------------------
+yytext: )
+token class: GROUPING
+lineno:4
 --------------------
 ```
 Where `yytext` is the matched token, `token class` is the token classification, and `lineno` is the line number where the token was found.
